@@ -1,0 +1,11 @@
+
+これは、
+
+From: kent@sparky.IMD.Sterling.COM (Kent Landfield)
+Newsgroups: comp.sources.wanted
+Subject: Re: Need Non-commentary Sources Line Counter
+Message-ID: <1990Nov25.223059.3933@sparky.IMD.Sterling.COM>
+Date: 25 Nov 90 22:30:59 GMT
+
+で流れていたプログラムをOS/2用に移植したものです。移植といっても、
+ＥＭＸ用に、コマンド行引数の展開を追加しただけのものです。

@@ -1,0 +1,62 @@
+
+  NAME
+       comments	- extract comment and non-blank	lines from C source
+       files
+
+  SYNOPSIS
+       comments	[-c  [-v] [-tfilename] ] [-j] [-{Rrs}] file
+
+  DESCRIPTION
+       Comments is a general purpose tool for dealing with
+       comment lines in C files.  comments also identifies
+       Embedded comment and Delimiter mismatch lines while
+       displaying comment lines of a file.
+
+       The output from comments	goes to	standard out.
+
+       If no options are used the comment lines	are output as they
+       appear in the file or taken from	standard in.
+
+       The meanings of the options are:
+
+       -c   Produce code/comment/total statistics. The information
+	    is displayed in 2 rows.  The first row contains the
+	    number of characters of code, comment, and total.  The
+	    second row contains	the number of lines with code, com-
+	    ments, and total.  The second row also includes the
+	    name of the	file being processed.
+
+	    Special characters (ie. form and line feeds) are
+	    included only in total counts therefore the	number of
+	    characters of code plus comments do	not equal the total
+	    number of characters.  This	prevents blank lines from
+	    affecting the counts.
+
+	    A line with	both code and a	comment	counts as one code
+	    line and one comment line.	Therefore the number of
+	    lines with code plus lines with comment may	be greater
+	    than the total lines.
+
+       -j   Left justify the comments printed.
+
+       -R   Strip comments removing all	blank lines.
+
+       -r   Strip comments removing multiple blank lines.
+
+       -s   Strip comments leaving all blank lines.
+
+       -tfilename
+	    The	filename to display with -c if taken from standard
+	    input.  This option	must be	used in	conjunction with
+	    the	-c option for it to be active.
+
+       -v   Print out the header for count option.  Three columns
+	    from the -c	option are labeled:
+
+		  Code	   Comment    Total
+
+	    This option	must be	used in	conjunction with the -c
+	    option for it to be	active.
+
+       file File to be processed if not	from standard input.
+
